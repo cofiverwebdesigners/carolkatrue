@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head> 
+     <link rel="stylesheet" type="text/css" href="sty.css">
+     <title>Bursary Application form</title>
+	 <script type="text/javascript" src="java.js"></script>
+</head>
+
+<body>
+<h1>Machakos County Government Bursary Application Form </h1>
+<p>Hello comarades, Machakos 2023-2024 Bursary application portal is now open. To apply kindly fill in 
+the form below.</p>
+
+<img src="bot2.png" alt="image" style="float:right;">
+<form>
+<h3>Personal Details</h3>
+First Name:<br>
+<input id="first_name" onblur="Firstname_checker();"type="text" 
+name="first_field" placeholder="ensure no numeric number is entered here"
+style="width:300px"><span id="user_first"></span><br><br>
+
+Second Name:<br>
+<input id="second_name" onblur="secondname_checker();" type="text" name="seco_field"
+placeholder="ensure no numeric number is entered here"
+style="width:300px"><span id="second_field"></span><br><br>
+username:<br>
+<input id="user_name" onblur="username_checker();"type="text" name="username_field"
+placeholder="your username=FirstName+secondName"
+style="width:300px"><span id="wetu"></span><br><br>
+
+Email Address:<br>
+<input id="email" type="text" name="email" style="width:300px" placeholder="enter a valid email address"><br><br>
+
+Phone Number:<br>
+<input id="phone_number" type="number" name="phone_number" style="width:300px" placeholder="phone number should  be 10 numbers only"><br>
+<br>
+
+ID Number:<br>
+<input id="ID number" type="number" name="id_number" style="width:300px"
+placeholder="enter a valid ID number"><br><br>
+
+Create a Unique Password:<br>
+<input id="my_passowrd" type="password" onblur="password_checker();"name="popo" 
+style="width:300px" placeholder="your password should  be 5 characters long"> <span id="user_password"></span><br>
+<br>
+
+
+<br>
+<br>
+Gender:<br>
+<input type="radio" name="my_check" value="male">male<br>
+<input type="radio" name="my_check" value="female">female<br>
+<input type="radio" name="my_check" value="male">intersex<br>
+<input type="radio" name="my_check" value="male">I would Rather Not say<br>
+<br>
+<br>
+
+Tick where appropriate:<br>
+<input type="checkbox" name="my_check" value="1">i am already enrolled in a known private or public university or college<br>
+<input type="checkbox" name="my_check" value="1">i have other siblings at other schools <br>
+<input type="checkbox" name="my_check" value="1">i haven't been caught in an Academic misconduct e.g checking in exams<br>
+<input type="checkbox" name="my_check" value="1">My Acadermic Behavious at school is Top notch<br>
+
+<br>
+<br>
+<button  onclick="apply();">apply
+
+<p id="my_para"></p>
+</form>
+</body>
+</html>
